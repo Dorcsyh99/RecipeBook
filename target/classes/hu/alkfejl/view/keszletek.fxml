@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="300.0" prefWidth="450.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="hu.alkfejl.view.controller.KeszletekController">
+   <children>
+      <HBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="50.0" prefWidth="450.0" styleClass="keszletek-h-box" stylesheets="@styles.css">
+         <children>
+            <Button mnemonicParsing="false" text="Button" />
+         </children>
+      </HBox>
+      <TableView layoutY="50.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="251.0" prefWidth="450.0">
+        <columns>
+            <TableColumn prefWidth="110.0" text="Név" />
+          <TableColumn prefWidth="110.0" text="Mértékegysége" />
+          <TableColumn prefWidth="110.0" text="Egyéb mértékegység(ek)" />
+            <TableColumn prefWidth="110.0" text="Készleten" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>

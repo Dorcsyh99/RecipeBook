@@ -1,0 +1,79 @@
+.parent{
+    -fx-background-color: rgba(0, 0, 0, 0.4);
+}
+
+.menu-button{
+    -fx-font-size: 12px;
+    -fx-padding: 15px 0;
+    -fx-font-weight: 800;
+    -fx-text-fill: white;
+    -fx-min-height: 75px;
+    -fx-background-color: transparent;
+}
+
+.menu-button:hover{
+    -fx-background-color: rgba(255, 100, 215, 0.5);
+    -fx-text-fill: #303030;
+}
+
+.v-menu{
+    -fx-padding-top: 50px;
+    -fx-background-color: rgba(30, 30, 30, 0.5);
+}
+
+.title-button{
+    -fx-font-size: 18px;
+    -fx-font-weight: 600;
+    -fx-background-color: transparent;
+    -fx-border: none;
+}
+
+.keszletek-h-box{
+    -fx-background-color: rgba(30,30,30,0.4);
+}
+
+.keszlet-button{
+    -fx-font-size: 13px;
+    -fx-padding: 10px 20px;
+    -fx-background-color: rgba(255,255,255,0.3);
+    -fx-border-color: white;
+    -fx-border-width: 3px;
+}
+
+.keszlet-button:hover{
+    -fx-background-color: rgba(30,30,30,0.5);
+    -fx-border-color: transparent;
+    -fx-text-fill: white;
+}
+
+.weekly-header{
+    -fx-background-color: rgba(30, 200, 130, 0.5);
+    -fx-font-size: 14px;
+    -fx-font-weight: 700;
+    -fx-border-color: white;
+    -fx-border-width: 3px;
+}
+
+.recipe-anchor{
+    -fx-padding: 20px 10px;
+    -fx-background-color: rgba(200,200,200,0.7);
+}
+
+.recipe-text{
+    -fx-margin: 10px;
+    -fx-border-radius: 5px;
+    -fx-background-color: rgba(255,255,255,.8);
+    -fx-border-color: rgba(30,30,30,0.5);
+    -fx-border-width: 1px;
+}
+
+.new-recipe-btn{
+    -fx-background-color: rgba(255, 70, 120, 0.8);
+    -fx-text-fill: white;
+    -fx-font-weight: 700;
+}
+
+.new-recipe-btn:hover{
+    -fx-background-color: rgb(255, 70, 120);
+    -fx-border-width: 4px;
+}
