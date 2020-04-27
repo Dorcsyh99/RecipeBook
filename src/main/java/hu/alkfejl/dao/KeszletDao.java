@@ -10,4 +10,8 @@ public interface KeszletDao {
 
     public List<Keszlet> Osszes();
 
+    public Keszlet keres(String k);
+
+    public boolean modosit(Double m, String a);
+
 }

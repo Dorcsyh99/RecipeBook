@@ -9,7 +9,7 @@ import java.util.List;
 
 public class ReceptDaoImpl implements Receptdao {
 
-    private final static String DB_STRING = "jdbc:sqlite:bdproject2.db";
+    private final static String DB_STRING = "jdbc:sqlite:bdproject3.db";
     private static final String CREATE_RECEPT = "CREATE TABLE IF NOT EXISTS Recept (" +
             "id integer PRIMARY KEY AUTOINCREMENT," +
             "nev text NOT NULL," +

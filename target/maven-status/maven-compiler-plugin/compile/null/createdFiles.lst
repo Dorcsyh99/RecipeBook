@@ -3,7 +3,6 @@ hu\alkfejl\view\controller\ReceptekController.class
 hu\alkfejl\controller\AlapanyagController.class
 hu\alkfejl\view\controller\WeeklyMenuController.class
 hu\alkfejl\dao\Receptdao.class
-hu\alkfejl\view\controller\KeszletekController.class
 hu\alkfejl\dao\ReceptDaoImpl.class
 hu\alkfejl\dao\AlapanyagDao.class
 hu\alkfejl\view\controller\NewRecipeController.class
@@ -12,6 +11,7 @@ hu\alkfejl\controller\ReceptController.class
 hu\alkfejl\model\Alapanyag.class
 hu\alkfejl\view\controller\AlapanyagHozzaadasa.class
 hu\alkfejl\model\Keszlet.class
+hu\alkfejl\view\controller\BevasarloListaController.class
 hu\alkfejl\dao\KeszletDao.class
 hu\alkfejl\view\controller\MainWindowController.class
 hu\alkfejl\App.class

@@ -6,18 +6,21 @@ public class Keszlet {
     private IntegerProperty id = new SimpleIntegerProperty();
     private StringProperty nev = new SimpleStringProperty();
     private StringProperty mertekegyseg = new SimpleStringProperty();
-    private IntegerProperty mennyiseg = new SimpleIntegerProperty();
+    private DoubleProperty mennyiseg = new SimpleDoubleProperty();
+    private DoubleProperty minimalis = new SimpleDoubleProperty();
 
-    public Keszlet(int id, String nev, String mertekegyseg, int mennyiseg){
+    public Keszlet(int id, String nev, String mertekegyseg, double mennyiseg, double minimalis){
         this.id.set(id);
         this.nev.set(nev);
         this.mertekegyseg.set(mertekegyseg);
         this.mennyiseg.set(mennyiseg);
+        this.minimalis.set(minimalis);
     }
-    public Keszlet(String nev, String mertekegyseg, int mennyiseg){
+    public Keszlet(String nev, String mertekegyseg, double mennyiseg, double min){
         this.nev.set(nev);
         this.mertekegyseg.set(mertekegyseg);
         this.mennyiseg.set(mennyiseg);
+        this.minimalis.set(min);
     }
 
     public int getId(){
@@ -32,17 +35,19 @@ public class Keszlet {
 
     public StringProperty alapanyagNevProperty(){return nev;}
     public StringProperty alapanyagMertekegysegProperty(){return mertekegyseg;};
-    public IntegerProperty mennyisegProperty(){return mennyiseg;};
+    public DoubleProperty mennyisegProperty(){return mennyiseg;};
+    public DoubleProperty minimalisProperty(){return minimalis;};
 
     public String getMertekegyseg(){ return mertekegyseg.get();}
     public void setMertekegyseg(String mertekegyseg){this.mertekegyseg.set(mertekegyseg);}
 
-
-    public int getMennyiseg(){
+    public double getMennyiseg(){
         return mennyiseg.get();
     }
-
-    public void setMennyiseg(int m){
+    public void setMennyiseg(double m){
         this.mennyiseg.set(m);
     }
+
+    public double getMinimalis(){return minimalis.get();}
+    public void setMinimalis(double min){this.minimalis.set(min);}
 }

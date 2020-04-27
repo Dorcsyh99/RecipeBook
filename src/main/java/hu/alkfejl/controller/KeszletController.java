@@ -32,4 +32,8 @@ public class KeszletController {
     public List<Keszlet> Osszes() {
         return dao.Osszes();
     }
+
+    public Keszlet keres(String k){ return dao.keres(k);}
+
+    public boolean modosit(Double m, String a){return dao.modosit(m, a);}
 }

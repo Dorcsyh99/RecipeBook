@@ -36,13 +36,16 @@ public class MainWindowController implements Initializable {
      private TableColumn<Keszlet, String> mertekegysegCol;
 
      @FXML
-     private TableColumn<Keszlet, Integer> keszletenCol;
+     private TableColumn<Keszlet, Double> keszletenCol;
 
      @FXML
      private TableColumn<Alapanyag, String> alapNev;
 
      @FXML
      private TableColumn<Alapanyag, String> alapMert;
+
+     @FXML
+     private TableColumn<Keszlet, Double> minCol;
 
      @FXML
      public void refreshKeszlet(){
@@ -100,6 +103,21 @@ public class MainWindowController implements Initializable {
              e.printStackTrace();
          }
      }
+    @FXML
+    public void openLista(){
+        Parent root = null;
+        try {
+            root = FXMLLoader.load(getClass().getResource("/hu/alkfejl/view/lista.fxml"));
+            Stage stage = new Stage();
+            Scene scene = new Scene(root);
+            stage.setScene(scene);
+            stage.initModality(Modality.APPLICATION_MODAL);
+            stage.show();
+        } catch (IOException e){
+            e.printStackTrace();
+        }
+    }
+
      @FXML
      public void openKeszletModositas(){
          Parent root = null;
@@ -126,6 +144,7 @@ public class MainWindowController implements Initializable {
         nevCol.setCellValueFactory(new PropertyValueFactory<>("alapanyagNev"));
         mertekegysegCol.setCellValueFactory(new PropertyValueFactory<>("alapanyagMertekegyseg"));
         keszletenCol.setCellValueFactory(new PropertyValueFactory<>("mennyiseg"));
+        minCol.setCellValueFactory(new PropertyValueFactory<>("minimalis"));
 
         List<Alapanyag> list2 = AlapanyagController.getInstance().Osszes();
         table2.setItems(FXCollections.observableArrayList(list2));

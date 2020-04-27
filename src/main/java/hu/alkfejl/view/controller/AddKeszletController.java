@@ -15,6 +15,7 @@ import javafx.scene.control.ChoiceBox;
 import javafx.scene.control.ComboBox;
 import javafx.scene.control.TextField;
 import javafx.stage.Stage;
+import org.w3c.dom.Text;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -29,6 +30,9 @@ public class AddKeszletController {
 
     @FXML
     TextField mennyiseg;
+
+    @FXML
+    TextField minimalis;
 
     List<Alapanyag> alapanyagList = AlapanyagController.getInstance().Osszes();
 
@@ -55,21 +59,22 @@ public class AddKeszletController {
 
         if (alap.isEmpty()) {
             utils.showWarning("Nem lehet üres a név!");
-
             return;
         }
         if (mertekegyseg.isEmpty()) {
             utils.showWarning("Nem lehet üres a mértékegység!");
-
             return;
         }
         if(mennyiseg.getText().isEmpty()){
             utils.showWarning("Nem lehet üres a mennyiség!");
-
             return;
         }
-        int menny = Integer.parseInt(mennyiseg.getText());
-        Keszlet k = new Keszlet(alap, mertekegyseg, menny);
+        if(minimalis.getText().isEmpty()){
+            utils.showWarning("Nem lehet üres a minimális késlet megadás!");
+        }
+        double menny = Double.parseDouble(mennyiseg.getText());
+        double min = Double.parseDouble(minimalis.getText());
+        Keszlet k = new Keszlet(alap, mertekegyseg, menny, min);
 
         if (KeszletController.getInstance().hozzaad(k)) {
             Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
@@ -77,7 +82,6 @@ public class AddKeszletController {
 
         } else {
             utils.showWarning("Nem sikerült a mentés!");
-
             return;
         }
     }

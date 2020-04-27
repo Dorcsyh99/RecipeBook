@@ -8,7 +8,7 @@ import java.util.List;
 
 public class AlapanyagDaoImpl implements AlapanyagDao {
 
-    private final static String DB_STRING = "jdbc:sqlite:bdproject2.db";
+    private final static String DB_STRING = "jdbc:sqlite:bdproject3.db";
     private static final String CREATE_ALAPANYAG = "CREATE TABLE IF NOT EXISTS Alapanyag (" +
             "id integer PRIMARY KEY AUTOINCREMENT," +
             "nev text NOT NULL," +

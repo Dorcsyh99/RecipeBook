@@ -26,22 +26,12 @@ public class AlapanyagHozzaadasa {
     @FXML
     private void save(ActionEvent event) {
         if (nevField.getText().isEmpty()) {
-            Alert alert = new Alert(Alert.AlertType.ERROR);
-            alert.setTitle("Hiba");
-            alert.setHeaderText(null);
-            alert.setContentText("Nem lehet üres a név!");
-
-            alert.showAndWait();
+            utils.showWarning("A név nem lehet üres!");
 
             return;
         }
         if (mertekegysegField.getText().isEmpty()) {
-            Alert alert = new Alert(Alert.AlertType.ERROR);
-            alert.setTitle("Hiba");
-            alert.setHeaderText(null);
-            alert.setContentText("Nem lehet üres a mértékegység!");
-
-            alert.showAndWait();
+            utils.showWarning("A mértékegység nem lehet üres!");
 
             return;
         }
