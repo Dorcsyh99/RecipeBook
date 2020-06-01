@@ -7,7 +7,6 @@ Asztali verzió (RecipeBookDesktop modul):
 Sajnos nem firssít automatikusan a módosításoknál / hozzáadásoknál, így ezeket manuálisan tudjátok megtenni a frissítés gombokkal.
 Webes verzió (RecipeBookWeb modul):
 - Receptek listázása
-(Nem igazán boldogultam a servletekkel :( )
 
 Beüzemelés:
 Én csak intellij-ből indítottam eddig, az asztali verziónak egyszerűen futnia kell egy javafx:compile, majd javafx:run után. Az adatbázissal azonban lehetnek gondok. Én abszolút útvonalat használtam, hogy a szerver és az asztali verzót is ugyanazt az adatbázist tudja használni. Ezért, amikor megnyitjátok írjátok át a DB_STRING-eket az összes DaoImpl-ben. Javaslom az abszolút útvonalat Nektek is, abba a mappába, ahol a tomcat szerver van, így a webes cuccal biztos nem lesz gond. Csatolok egy adatbázist is, így lesznek már benne basic adatok, hogy jobban lássátok az elején, hogy milyen az alkalmazás. 
