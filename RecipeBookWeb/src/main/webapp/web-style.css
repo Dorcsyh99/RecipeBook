@@ -1,0 +1,26 @@
+body{
+    background-image: linear-gradient(to left bottom, rgba(255, 30, 175, .5), rgba(255, 10, 130, 0.5));
+
+    margin: 0;
+    padding: 0;
+}
+h1{
+    text-align: center;
+    margin: 10px 0 40px 0;
+}
+.card-container{
+    padding: 5%;
+    margin: 0;
+}
+.recipe-card{
+    float: left;
+    padding: 10px 20px;
+    margin: 0 30px;
+    border: 1px solid white;
+    border-radius: 15px;
+    box-shadow: 2px 2px 10px gray;
+    min-width: 30%;
+    max-width: 30%;
+    min-height: 200px;
+}
+
